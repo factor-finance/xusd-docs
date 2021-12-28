@@ -1,3 +1,6 @@
+---
+icon: people
+---
 # Community
 
 ## Coming soon...

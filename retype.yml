@@ -12,4 +12,10 @@ links:
   icon: rocket
 footer:
   copyright: "&copy; Copyright {{ year }} Factor Finance"
-favicon: img/favicon.ico
+  links:
+  - text: Discord
+    link: https://discord.gg/ETE7ksP8Fd
+    icon: /img/discord_24.png
+  - text: Github
+    link: https://github.com/xusd-fi
+    icon: mark-github
