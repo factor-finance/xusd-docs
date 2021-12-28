@@ -1,0 +1,5 @@
+site_name: XUSD by Factor Finance
+site_url: https://docs.xusd.fi
+
+theme: material
+include_sidebar: true
