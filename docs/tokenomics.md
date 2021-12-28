@@ -1,3 +1,7 @@
+---
+order: 2
+icon: sync
+---
 # Tokenomics
 ### XUSD can be minted with or redeemed for stable coins
 * Redemption carries small fee (0.5% to start) paid to treasury
