@@ -1,7 +1,6 @@
-# XUSD: an autoyield stablecoin
+# XUSD - interest bearing stablecoin
 ### Stable value
 * 1 XUSD = $1
-* ![foo](docs/img/logo_128_white.png)
 * Maintained by incentivized arbitrage
 
 ### Instantly fungible

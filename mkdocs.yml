@@ -1,6 +1,5 @@
 site_name: XUSD by Factor Finance
 site_url: https://docs.xusd.fi
-
 theme:
   name: material
   logo: img/logo_white_64.png
