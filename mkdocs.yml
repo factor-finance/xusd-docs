@@ -1,5 +1,28 @@
 site_name: XUSD by Factor Finance
 site_url: https://docs.xusd.fi
 
-theme: gitbook
+theme:
+  name: material
+  logo: img/logo_white_64.png
+  favicon: img/favicon.ico
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
 include_sidebar: true
+nav:
+  - Summary: summary.md
+  - Tokenomics: tokenomics.md
+  - Roadmap: roadmap.md
+  - Community: community.md
+  - Security: security.md
+extra:
+  homepage: https://xusd.fi
