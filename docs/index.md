@@ -1,1 +1,0 @@
-# XUSD - interest bearing stablecoin

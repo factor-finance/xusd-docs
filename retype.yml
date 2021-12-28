@@ -1,0 +1,15 @@
+input: docs
+output: .retype
+url: docs.xusd.fi
+branding:
+  title: Factor XUSD
+  label: &878907671 v0
+  logo: img/logo_white_64.png
+  logoAlign: left
+links:
+- text: Buy XUSD
+  link: https://xusd.fi
+  icon: rocket
+footer:
+  copyright: "&copy; Copyright {{ year }} Factor Finance"
+favicon: img/favicon.ico

@@ -1,4 +1,9 @@
-# XUSD - interest bearing stablecoin
+---
+order: 3
+label: How it works
+icon: question
+---
+# Interest bearing stablecoin
 ### Stable value
 * 1 XUSD = $1
 * Maintained by incentivized arbitrage
