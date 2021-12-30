@@ -10,6 +10,9 @@ links:
 - text: Buy XUSD
   link: https://xusd.fi
   icon: rocket
+- text: XUSD Snowtrace
+  link: https://testnet.snowtrace.io/token/0x66b0ced1ae158871cd9accb2f55e355c1a636025
+  icon: note
 footer:
   copyright: "&copy; Copyright {{ year }} Factor Finance"
   links:
