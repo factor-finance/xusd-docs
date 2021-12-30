@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 99
 label: How it works
 icon: question
 ---
