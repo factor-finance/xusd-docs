@@ -26,11 +26,11 @@ Currently, XUSD supports these stablecoins:
 
 `Avalanche C-chain address: 0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664`
 +++ ![](https://app.xusd.fi/images/currency/dai-icon-small.svg)  DAI
-**[Ethereum-bridged DAI](https://snowtrace.io/token/0xd586e7f844cea2f87f50152665bcbc2c279d8d70)**
+**[Avalanche-bridged DAI](https://snowtrace.io/token/0xd586e7f844cea2f87f50152665bcbc2c279d8d70)**
 
 `Avalanche C-chain address: 0xd586e7f844cea2f87f50152665bcbc2c279d8d70`
 +++ ![](https://app.xusd.fi/images/currency/usdt-icon-small.svg)  USDT.e
-**[Ethereum-bridged USDT](https://snowtrace.io/token/0xc7198437980c041c805a1edcba50c1ce5db95118)**
+**[Avalanche-bridged USDT](https://snowtrace.io/token/0xc7198437980c041c805a1edcba50c1ce5db95118)**
 
 `Avalanche C-chain address: 0xc7198437980c041c805a1edcba50c1ce5db95118`
 +++
