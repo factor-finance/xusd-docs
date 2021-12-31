@@ -7,10 +7,10 @@ branding:
   logo: img/logo_white_64.png
   logoAlign: left
 links:
-- text: Buy XUSD
-  link: https://xusd.fi
-  icon: rocket
-- text: XUSD Snowtrace
+#- text: Buy XUSD
+#  link: https://app.xusd.fi
+#  icon: rocket
+- text: XUSD on Snowtrace
   link: https://testnet.snowtrace.io/token/0x66b0ced1ae158871cd9accb2f55e355c1a636025
   icon: note
 footer:
