@@ -22,15 +22,15 @@ Redemptions using the XUSD vault incur a 0.5% exit fee and the user doesn't get 
 #### Supported stablecoins
 Currently, XUSD supports these stablecoins:
 +++ ![](https://app.xusd.fi/images/currency/usdc-icon-small.svg)  USDC.e
-**[Ethereum-wrapped USDC](https://snowtrace.io/token/0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664)**
+**[Avalanche-bridged USDC](https://snowtrace.io/token/0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664)**
 
 `Avalanche C-chain address: 0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664`
 +++ ![](https://app.xusd.fi/images/currency/dai-icon-small.svg)  DAI
-**[Ethereum-wrapped DAI](https://snowtrace.io/token/0xd586e7f844cea2f87f50152665bcbc2c279d8d70)**
+**[Ethereum-bridged DAI](https://snowtrace.io/token/0xd586e7f844cea2f87f50152665bcbc2c279d8d70)**
 
 `Avalanche C-chain address: 0xd586e7f844cea2f87f50152665bcbc2c279d8d70`
 +++ ![](https://app.xusd.fi/images/currency/usdt-icon-small.svg)  USDT.e
-**[Ethereum-wrapped USDT](https://snowtrace.io/token/0xc7198437980c041c805a1edcba50c1ce5db95118)**
+**[Ethereum-bridged USDT](https://snowtrace.io/token/0xc7198437980c041c805a1edcba50c1ce5db95118)**
 
 `Avalanche C-chain address: 0xc7198437980c041c805a1edcba50c1ce5db95118`
 +++
