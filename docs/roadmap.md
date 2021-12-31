@@ -3,6 +3,12 @@ order: 95
 icon: versions
 ---
 # Roadmap
+## Testnet launch
+* January 2022
+## Mainnet launch
+* Mainnet contracts
+* Swap dapp
+* Analytics dashboard
 ## Table stakes
 * Launch governance token
 * Airdrop rewards

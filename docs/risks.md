@@ -42,7 +42,7 @@ Vault funds backing XUSD are in contracts controlled by other DeFi protocols (e.
 ==- Low-or-no exchange liquidity
 Risk  | Mitigation
 ---   | ---
-If centralized exchange (CEX), decentralized exchange (DEX), and/or OTC liquidity disappeared (i.e. "rug pull"), XUSD holder could be unable to sell. | XUSD is *always* fully redeemable for the underlying stablecoins by calling `redeem` method on the vault contract, which makes liquidity unnecessary to redeem XUSD for stablecoins DAI/USDC/USDT, although selling XUSD on an exchange may be preferable or more convienant.
+If centralized exchange (CEX), decentralized exchange (DEX), and/or OTC liquidity disappeared (i.e. "rug pull"), XUSD holder could be unable to sell. | XUSD is *always* fully redeemable for the underlying stablecoins by calling the `redeem` method on the vault contract, which makes liquidity unnecessary to redeem XUSD for stablecoins DAI/USDC/USDT, although selling XUSD on an exchange may be preferable or more convienant.
 
 ==- Departure from $1 Peg
 Risk  | Mitigation
