@@ -25,11 +25,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/img/favicon.png" rel="icon" />
-    <link href="/resources/css/retype.css?v=1.11.2.694239140529" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.694245689943" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.694239140529" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.694245689943" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.694239140529" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.694245689943" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -194,64 +194,124 @@
         <span>Interest bearing stablecoin</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="stable-value">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#stable-value">#</doc-anchor-trigger>
-        <span>Stable value</span>
-    </h3>
+<doc-anchor-target id="stable-value-and-fully-backed">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#stable-value-and-fully-backed">#</doc-anchor-trigger>
+        <span>Stable value and fully backed</span>
+    </h4>
 </doc-anchor-target>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-gray-600 dark:bg-dark-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert text-gray-300 bg-gray-900 border-gray-900 dark:bg-white dark:border-dark-600 dark:text-dark-700 doc-alert-contrast" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-gray-300 dark:text-dark-700" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>1 XUSD = $1</p>
+        </div>
+    </div>
+</div>
 <ul>
-<li>1 XUSD = $1</li>
-<li>Maintained by incentivized arbitrage</li>
+<li>$1 of stablecoin backs every XUSD</li>
+<li>XUSD is an <a href="https://ethereum.org/en/developers/docs/standards/tokens/erc-20/">ERC20 token</a> on the <a href="https://www.avax.network/">Avalanche C-chain</a></li>
 </ul>
 <doc-anchor-target id="instantly-fungible">
-    <h3>
+    <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#instantly-fungible">#</doc-anchor-trigger>
         <span>Instantly fungible</span>
-    </h3>
+    </h4>
 </doc-anchor-target>
 <ul>
-<li>Permissionless mint and redeem using major stablecoins (USDC, DAI, USDT)</li>
+<li>Permissionless <a href="https://app.xusd.fi">mint</a> using any of supported stablecoins (USDC, DAI, USDT) with no slippage</li>
+<li>Permissionless <a href="https://app.xusd.fi">redemption</a> for mix of supported stablecoins with no slippage and 0.5% redemption fee</li>
+<li>Support on major DEX and CEX (coming soon).</li>
 </ul>
-<doc-anchor-target id="generate-yield-on-stablecoins">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#generate-yield-on-stablecoins">#</doc-anchor-trigger>
-        <span>Generate yield on stablecoins</span>
-    </h3>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>Redemptions using the XUSD vault incur a 0.5% exit fee and the user doesn&#x27;t get to pick which stablecoins they receive. Users can often avoid this fee by selling on a DEX or CEX instead.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="supported-stablecoins">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#supported-stablecoins">#</doc-anchor-trigger>
+        <span>Supported stablecoins</span>
+    </h4>
+</doc-anchor-target>
+<p>Currently, XUSD supports these stablecoins:</p>
+<doc-tabs>
+<doc-tab id="https-app-xusd-fi-images-currency-usdc-icon-small-svg-usdc-e">
+<template #title><img src="https://app.xusd.fi/images/currency/usdc-icon-small.svg" alt="" /> USDC.e</template>
+<p><strong><a href="https://snowtrace.io/token/0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664">Ethereum-wrapped USDC</a></strong></p>
+<p><code v-pre>Avalanche C-chain address: 0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664</code></p>
+</doc-tab>
+<doc-tab id="https-app-xusd-fi-images-currency-dai-icon-small-svg-dai">
+<template #title><img src="https://app.xusd.fi/images/currency/dai-icon-small.svg" alt="" /> DAI</template>
+<p><strong><a href="https://snowtrace.io/token/0xd586e7f844cea2f87f50152665bcbc2c279d8d70">Ethereum-wrapped DAI</a></strong></p>
+<p><code v-pre>Avalanche C-chain address: 0xd586e7f844cea2f87f50152665bcbc2c279d8d70</code></p>
+</doc-tab>
+<doc-tab id="https-app-xusd-fi-images-currency-usdt-icon-small-svg-usdt-e">
+<template #title><img src="https://app.xusd.fi/images/currency/usdt-icon-small.svg" alt="" /> USDT.e</template>
+<p><strong><a href="https://snowtrace.io/token/0xc7198437980c041c805a1edcba50c1ce5db95118">Ethereum-wrapped USDT</a></strong></p>
+<p><code v-pre>Avalanche C-chain address: 0xc7198437980c041c805a1edcba50c1ce5db95118</code></p>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="automated-stablecoin-yield-farming">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#automated-stablecoin-yield-farming">#</doc-anchor-trigger>
+        <span>Automated stablecoin yield farming</span>
+    </h4>
 </doc-anchor-target>
 <ul>
-<li>Invests in ultra-low volatility, market neutral strategies</li>
-<li>Extensible and configurable strategy set</li>
-<li>e.g. lending on Aave, liquidity providing on curve.fi</li>
+<li>The vault invests in ultra-low volatility, market neutral strategies</li>
+<li>Extensible and configurable strategy set e.g. lending on <a href="https://app.aave.com/#/markets">Aave</a>, stablecoin liquidity providing (curve.fi, Pangolin), and other DeFi strategies.</li>
+<li>Rewards are claimed, collected, swapped, and reinvested automatically at least <em>once per day</em></li>
 </ul>
-<doc-anchor-target id="distribute-yield-through-supply-rebasing">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#distribute-yield-through-supply-rebasing">#</doc-anchor-trigger>
-        <span>Distribute yield through supply rebasing</span>
-    </h3>
+<doc-anchor-target id="elastic-supply">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#elastic-supply">#</doc-anchor-trigger>
+        <span>Elastic supply</span>
+    </h4>
 </doc-anchor-target>
 <ul>
 <li>The amount of XUSD in all wallets increases when gains are realized</li>
+<li>Yield distributed by supply rebasing, so 1 XUSD</li>
 </ul>
 <doc-anchor-target id="lowest-barrier-of-entry-for-defi-yields">
-    <h3>
+    <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lowest-barrier-of-entry-for-defi-yields">#</doc-anchor-trigger>
         <span>Lowest barrier of entry for DeFi yields</span>
-    </h3>
+    </h4>
 </doc-anchor-target>
 <ul>
 <li>SEC-qualified custodians can hold ERC20 tokens, but cannot give DeFi access</li>
-<li>No self-custody/contract interactions are required to capture DeFi yields via XUSD</li>
-<li>Centralized exchanges and custody tools can support XUSD on behalf of users</li>
+<li>No self-custody/contract interactions are required to access DeFi yields via XUSD</li>
+<li>Centralized exchanges and custody tools can support XUSD on behalf of users with minimal setup</li>
 </ul>
 <doc-anchor-target id="initial-launch-on-avalanche-c-chain">
-    <h3>
+    <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#initial-launch-on-avalanche-c-chain">#</doc-anchor-trigger>
         <span>Initial launch on Avalanche C-Chain</span>
-    </h3>
+    </h4>
 </doc-anchor-target>
 <ul>
-<li>Low gas fees</li>
+<li>Low gas fees (minting XUSD for around $5 for unlimited amount)</li>
 <li>More than $10 billion of native and ethereum-bridge wrapped stablecoins</li>
 <li>Strong <a href="https://medium.com/avalancheavax/avalanche-foundation-announces-180m-defi-incentive-program-d320fdfafff7">incentive programs</a></li>
 <li>Established DeFi protocols operating (Aave, curve.fi, Pangolin, and so many others)</li>
