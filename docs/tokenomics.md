@@ -1,5 +1,5 @@
 ---
-order: 98
+order: 96
 icon: sync
 ---
 # Tokenomics

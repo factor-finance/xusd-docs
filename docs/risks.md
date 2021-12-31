@@ -1,4 +1,5 @@
 ---
+label: Risks
 icon: zap
 order: 97
 ---
