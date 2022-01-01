@@ -40,9 +40,12 @@ Currently, XUSD supports these stablecoins:
 * Extensible and configurable strategy set e.g. lending on [Aave](https://app.aave.com/#/markets), stablecoin liquidity providing (curve.fi, Pangolin), and other DeFi strategies.
 * Rewards are claimed, collected, swapped, and reinvested automatically at least _once per day_
 
+#### Yield generation strategies
+
+
 #### Elastic supply
 * The amount of XUSD in all wallets increases when gains are realized
-* Yield distributed by supply rebasing, so 1 XUSD
+* Yield distributed by supply rebasing, so that XUSD remains fully backed: 1 XUSD = $1 USD.
 
 #### Lowest barrier of entry for DeFi yields
 * SEC-qualified custodians can hold ERC20 tokens, but cannot give DeFi access
@@ -51,6 +54,6 @@ Currently, XUSD supports these stablecoins:
 
 #### Initial launch on Avalanche C-Chain
 * Low gas fees (minting XUSD for around $5 for unlimited amount)
-* More than $10 billion of native and ethereum-bridge wrapped stablecoins
+* More than $100 billion of native and ethereum-bridge wrapped stablecoins
 * Strong [incentive programs](https://medium.com/avalancheavax/avalanche-foundation-announces-180m-defi-incentive-program-d320fdfafff7)
 * Established DeFi protocols operating (Aave, curve.fi, Pangolin, and so many others)
