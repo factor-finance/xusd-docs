@@ -3,37 +3,90 @@ order: 96
 icon: sync
 ---
 # Tokenomics
+
+
+### Mint XUSD from Stablecoins
+
 ```mermaid
     %%{init: { 'theme': dark' } }%%
 sequenceDiagram
-    participant Stablecoins
-    participant XUSD
+    actor Wallet
+    participant XUSD Contract
     participant Vault
     participant Yield Strategies
-    participant Treasury
-    participant FACT
-    participant FACT Staking module
 
-    note left of Stablecoins: Minting XUSD
-    Stablecoins->>+XUSD: Mint
-    XUSD->>+Vault: Transfer
-    deactivate XUSD
+    Wallet->>+XUSD Contract: Convert Stablecoins
+    XUSD Contract->>+Vault: Transfer
     Vault->>-Yield Strategies: Allocate
-    Yield Strategies->>Vault: Harvest Yield
+    XUSD Contract->>XUSD Contract: Mint XUSD for wallet
+    deactivate XUSD Contract
+    Wallet->>+XUSD Contract: Get balance
+    XUSD Contract->>-Wallet: Increased XUSD Balance
+```
+
+### Rebase XUSD balances with gains
+
+```mermaid
+    %%{init: { 'theme': dark' } }%%
+sequenceDiagram
+    actor Wallet
+    participant XUSD Contract
+    participant Vault
+    participant Yield Strategies
+
+    XUSD Contract->>Vault: Periodic Rebase
+    activate XUSD Contract
     activate Vault
-    note left of Stablecoins: Increase XUSD with gains (rebase)
-    Vault->>XUSD: Distribute yield as supply increase
-    note left of Stablecoins: Distribute protocol fees
-    Vault->>Treasury: Collect fee
+    Yield Strategies->>Vault: Harvest yield
+    Vault->>Yield Strategies: Rebalance
+    Vault->>XUSD Contract: Report yield
     deactivate Vault
-    activate Treasury
-    Treasury->>+FACT: Open market purchase
-    deactivate Treasury
-    FACT->>+FACT Staking module: Distribute
-    deactivate FACT
-    Vault->>+XUSD: Transfer
-    note left of Stablecoins: Redeem XUSD
-    XUSD->>-Stablecoins: Redeem
+    XUSD Contract->>XUSD Contract: Mint XUSD for yield
+    XUSD Contract->>XUSD Contract: Distribute XUSD among wallets
+    deactivate XUSD Contract
+    Wallet->>+XUSD Contract: Get balance
+    XUSD Contract->>-Wallet: Increased XUSD Balance
+```
+
+### Redeem XUSD for Stablecoins
+
+```mermaid
+    %%{init: { 'theme': dark' } }%%
+sequenceDiagram
+    actor Wallet
+    participant XUSD Contract
+    participant Vault
+
+    Wallet->>+XUSD Contract: Convert XUSD
+    XUSD Contract->>+Vault: Initiate Redeem
+    Vault->>+Yield Strategies: Divest
+    Yield Strategies->>-Vault: Transfer Stablecoins
+    Vault->>Vault: Hold 0.5% for protcol fee
+    Vault->>XUSD Contract: Transfer Stablecoins
+    deactivate Vault
+    XUSD Contract->>XUSD Contract: Burn XUSD
+    XUSD Contract->>-Wallet: Transfer Stablecoins
+```
+
+### Distribute protocol fee rewards
+
+```mermaid
+    %%{init: { 'theme': dark' } }%%
+sequenceDiagram
+    actor Wallet
+    participant Vault
+    participant Exchange
+
+    Wallet->>Vault: Option 1: Stake FACT
+    Wallet->>Vault: Option 2: Transfer liquidity pool tokens
+    note right of Wallet: XUSD/USDT.e, XUSD/USDC.e, XUSD/DAI, XUSD/FACT
+    Exchange->>Vault: Harvest liquidity pool rewards
+    activate Vault
+    Exchange->>Vault: Swap rewards for stablecoins
+    Vault->>Vault: Combine with protocol fees
+    Vault->>Vault: Hold 90% for redeem or rebase
+    Exchange->>Vault: Purchase FACT on open market
+    Vault->>-Wallet: Distribute FACT
 ```
 
 ##### XUSD can be minted with or redeemed for stable coins
