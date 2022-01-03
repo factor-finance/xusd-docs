@@ -19,9 +19,8 @@ sequenceDiagram
     XUSD Contract->>+Vault: Transfer
     Vault->>-Yield Strategies: Allocate
     XUSD Contract->>XUSD Contract: Mint XUSD for wallet
+    XUSD Contract->>Wallet: Increased XUSD Balance
     deactivate XUSD Contract
-    Wallet->>+XUSD Contract: Get balance
-    XUSD Contract->>-Wallet: Increased XUSD Balance
 ```
 
 ### Rebase XUSD balances with gains
@@ -34,18 +33,17 @@ sequenceDiagram
     participant Vault
     participant Yield Strategies
 
-    XUSD Contract->>Vault: Periodic Rebase
-    activate XUSD Contract
+    note over Vault: Periodic Rebase
+    Vault->>Yield Strategies: Harvest yield
     activate Vault
-    Yield Strategies->>Vault: Harvest yield
     Vault->>Yield Strategies: Rebalance
     Vault->>XUSD Contract: Report yield
+    activate XUSD Contract
     deactivate Vault
     XUSD Contract->>XUSD Contract: Mint XUSD for yield
     XUSD Contract->>XUSD Contract: Distribute XUSD among wallets
+    XUSD Contract->>Wallet: Increased XUSD Balance
     deactivate XUSD Contract
-    Wallet->>+XUSD Contract: Get balance
-    XUSD Contract->>-Wallet: Increased XUSD Balance
 ```
 
 ### Redeem XUSD for Stablecoins
@@ -61,14 +59,14 @@ sequenceDiagram
     XUSD Contract->>+Vault: Initiate Redeem
     Vault->>+Yield Strategies: Divest
     Yield Strategies->>-Vault: Transfer Stablecoins
-    Vault->>Vault: Hold 0.5% for protcol fee
+    Vault->>Vault: Hold 0.5% protcol fee
     Vault->>XUSD Contract: Transfer Stablecoins
     deactivate Vault
     XUSD Contract->>XUSD Contract: Burn XUSD
     XUSD Contract->>-Wallet: Transfer Stablecoins
 ```
 
-### Distribute protocol fee rewards
+### Reward FACT from protocol fee & liquidity pools
 
 ```mermaid
     %%{init: { 'theme': dark' } }%%
@@ -80,12 +78,12 @@ sequenceDiagram
     Wallet->>Vault: Option 1: Stake FACT
     Wallet->>Vault: Option 2: Transfer liquidity pool tokens
     note right of Wallet: XUSD/USDT.e, XUSD/USDC.e, XUSD/DAI, XUSD/FACT
-    Exchange->>Vault: Harvest liquidity pool rewards
+    Vault->>Exchange: Harvest liquidity pool rewards
     activate Vault
-    Exchange->>Vault: Swap rewards for stablecoins
+    Vault->>Exchange: Swap rewards for stablecoins
     Vault->>Vault: Combine with protocol fees
     Vault->>Vault: Hold 90% for redeem or rebase
-    Exchange->>Vault: Purchase FACT on open market
+    Vault->>Exchange: Purchase FACT on open market
     Vault->>-Wallet: Distribute FACT
 ```
 
