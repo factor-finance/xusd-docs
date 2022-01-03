@@ -8,28 +8,29 @@
     <!-- Primary Meta Tags -->
     <title>Tokenomics</title>
     <meta name="title" content="Tokenomics">
-    <meta name="description" content="Redemption carries nominal fee (0.5%) paid to treasury" />
+    <meta name="description" content="Redemption carries nominal fee (0.5%) paid to" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.xusd.fi/tokenomics/">
     <meta property="og:title" content="Tokenomics">
-    <meta property="og:description" content="Redemption carries nominal fee (0.5%) paid to treasury">
+    <meta property="og:description" content="Redemption carries nominal fee (0.5%) paid to">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.xusd.fi/tokenomics/">
     <meta property="twitter:title" content="Tokenomics">
-    <meta property="twitter:description" content="Redemption carries nominal fee (0.5%) paid to treasury">
+    <meta property="twitter:description" content="Redemption carries nominal fee (0.5%) paid to">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/img/favicon.png" rel="icon" />
-    <link href="/resources/css/retype.css?v=1.11.2.694322978409" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.694539945225" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.694322978409" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.694539945225" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.694322978409" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.694539945225" defer></script>
+    <script id="mermaid-js" type="text/javascript" src="/resources/js/mermaid.js?v=1.11.2" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -195,60 +196,112 @@
     </h1>
 </doc-anchor-target>
 <doc-anchor-target id="xusd-can-be-minted-with-or-redeemed-for-stable-coins">
-    <h5>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#xusd-can-be-minted-with-or-redeemed-for-stable-coins">#</doc-anchor-trigger>
         <span>XUSD can be minted with or redeemed for stable coins</span>
-    </h5>
+    </h3>
 </doc-anchor-target>
 <ul>
-<li>Redemption carries nominal fee (0.5%) paid to treasury</li>
-</ul>
-<doc-anchor-target id="stable-coins-in-vault-are-deposited-into-strategies">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#stable-coins-in-vault-are-deposited-into-strategies">#</doc-anchor-trigger>
-        <span>Stable coins in vault are deposited into strategies</span>
-    </h5>
-</doc-anchor-target>
-<ul>
+<li>Redemption carries nominal fee (0.5%) paid to</li>
+<li>Stable coins in vault are deposited into strategies</li>
 <li>Adjustable buffer reduces futile cycles</li>
 </ul>
-<doc-anchor-target id="strategies-generate-yield-increasing-treasury-value">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#strategies-generate-yield-increasing-treasury-value">#</doc-anchor-trigger>
-        <span>Strategies generate yield increasing treasury value</span>
-    </h5>
+<div class="overflow-hidden mb-6 py-4 dark:px-5 dark:bg-white rounded-md"><pre class="mermaid w-full">    %%{init: { 'theme': dark' } }%%
+sequenceDiagram
+    actor Wallet
+    participant XUSD Contract
+    participant Vault
+    participant Yield Strategies
+
+    Wallet-&gt;&gt;+XUSD Contract: Convert Stablecoins
+    XUSD Contract-&gt;&gt;+Vault: Transfer
+    Vault-&gt;&gt;-Yield Strategies: Allocate
+    XUSD Contract-&gt;&gt;XUSD Contract: Mint XUSD for wallet
+    XUSD Contract-&gt;&gt;Wallet: Increased XUSD Balance
+    deactivate XUSD Contract</pre></div>
+<doc-anchor-target id="strategies-generates-yield-and-xusd-increases-supply">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#strategies-generates-yield-and-xusd-increases-supply">#</doc-anchor-trigger>
+        <span>Strategies generates yield and XUSD increases supply</span>
+    </h3>
 </doc-anchor-target>
 <ul>
 <li>Deposit-type investments are tracked</li>
 <li>Rewards tokens are periodically sold for stablecoins and reinvested</li>
-</ul>
-<doc-anchor-target id="xusd-in-wallets-eoas-are-rebased-to-account-for-change-in-vault-value">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#xusd-in-wallets-eoas-are-rebased-to-account-for-change-in-vault-value">#</doc-anchor-trigger>
-        <span>XUSD in wallets (EOAs) are rebased to account for change in vault value</span>
-    </h5>
-</doc-anchor-target>
-<ul>
+<li>XUSD in wallets (EOAs) are rebased to account for change in vault value</li>
 <li>Adjustable Portion of yield paid to treasury, initially 0%</li>
 </ul>
-<doc-anchor-target id="treasury-purchases-governance-token-on-open-market-using-treasury-funds">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#treasury-purchases-governance-token-on-open-market-using-treasury-funds">#</doc-anchor-trigger>
-        <span>Treasury purchases governance token on open market using treasury funds</span>
-    </h5>
+<div class="overflow-hidden mb-6 py-4 dark:px-5 dark:bg-white rounded-md"><pre class="mermaid w-full">    %%{init: { 'theme': dark' } }%%
+sequenceDiagram
+    actor Wallet
+    participant XUSD Contract
+    participant Vault
+    participant Yield Strategies
+
+    note over Vault: Periodic Rebase
+    Vault-&gt;&gt;Yield Strategies: Harvest yield
+    activate Vault
+    Vault-&gt;&gt;Yield Strategies: Rebalance
+    Vault-&gt;&gt;XUSD Contract: Report yield
+    activate XUSD Contract
+    deactivate Vault
+    XUSD Contract-&gt;&gt;XUSD Contract: Mint XUSD for yield
+    XUSD Contract-&gt;&gt;XUSD Contract: Distribute XUSD among wallets
+    XUSD Contract-&gt;&gt;Wallet: Increased XUSD Balance
+    deactivate XUSD Contract</pre></div>
+<doc-anchor-target id="xusd-is-always-fully-redeemable-for-stablecoins">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#xusd-is-always-fully-redeemable-for-stablecoins">#</doc-anchor-trigger>
+        <span>XUSD is always fully redeemable for stablecoins</span>
+    </h3>
 </doc-anchor-target>
-<doc-anchor-target id="treasury-distributes-governance-token-to-stakers">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#treasury-distributes-governance-token-to-stakers">#</doc-anchor-trigger>
-        <span>Treasury distributes governance token to stakers</span>
-    </h5>
+<ul>
+<li>Redemption always possible for full value of XUSD</li>
+<li>Backing assets are liquidated from yield strategies if necessary</li>
+</ul>
+<div class="overflow-hidden mb-6 py-4 dark:px-5 dark:bg-white rounded-md"><pre class="mermaid w-full">    %%{init: { 'theme': dark' } }%%
+sequenceDiagram
+    actor Wallet
+    participant XUSD Contract
+    participant Vault
+
+    Wallet-&gt;&gt;+XUSD Contract: Convert XUSD
+    XUSD Contract-&gt;&gt;+Vault: Initiate Redeem
+    Vault-&gt;&gt;+Yield Strategies: Divest
+    Yield Strategies-&gt;&gt;-Vault: Transfer Stablecoins
+    Vault-&gt;&gt;Vault: Hold 0.5% protcol fee
+    Vault-&gt;&gt;XUSD Contract: Transfer Stablecoins
+    deactivate Vault
+    XUSD Contract-&gt;&gt;XUSD Contract: Burn XUSD
+    XUSD Contract-&gt;&gt;-Wallet: Transfer Stablecoins</pre></div>
+<doc-anchor-target id="reward-governance-token-fact-from-protocol-fees--liquidity-pools">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#reward-governance-token-fact-from-protocol-fees--liquidity-pools">#</doc-anchor-trigger>
+        <span>Reward governance token (FACT) from protocol fees &amp; liquidity pools</span>
+    </h3>
 </doc-anchor-target>
-<doc-anchor-target id="governance-token-confers-voting-rights">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#governance-token-confers-voting-rights">#</doc-anchor-trigger>
-        <span>Governance token confers voting rights</span>
-    </h5>
-</doc-anchor-target>
+<ul>
+<li>FACT is <a href="/roadmap/#table-stakes">not yet launched</a></li>
+<li>Vault purchases governance token on open market using collected protocol fees</li>
+<li>Vault distributes governance token to FACT stakers and XUSD liquidity providers</li>
+<li>Governance token confers voting rights</li>
+</ul>
+<div class="overflow-hidden mb-6 py-4 dark:px-5 dark:bg-white rounded-md"><pre class="mermaid w-full">    %%{init: { 'theme': dark' } }%%
+sequenceDiagram
+    actor Wallet
+    participant Vault
+    participant Exchange
+
+    Wallet-&gt;&gt;Vault: Option 1: Stake FACT
+    Wallet-&gt;&gt;Vault: Option 2: Transfer liquidity pool tokens
+    note right of Wallet: XUSD/USDT.e, XUSD/USDC.e, XUSD/DAI, XUSD/FACT
+    Vault-&gt;&gt;Exchange: Harvest liquidity pool rewards
+    activate Vault
+    Vault-&gt;&gt;Exchange: Swap rewards for stablecoins
+    Vault-&gt;&gt;Vault: Combine with protocol fees
+    Vault-&gt;&gt;Vault: Hold 90% for redeem or rebase
+    Vault-&gt;&gt;Exchange: Purchase FACT on open market
+    Vault-&gt;&gt;-Wallet: Distribute FACT</pre></div>
 
 
 
@@ -337,6 +390,6 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Tokenomics", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+        <script>window.__DOCS__ = { "title": "Tokenomics", icon: "file", hasPrism: false, hasMermaid: true, hasMath: false }</script>
     </body>
 </html>
