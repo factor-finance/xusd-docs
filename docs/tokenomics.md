@@ -5,7 +5,10 @@ icon: sync
 # Tokenomics
 
 
-### Mint XUSD from Stablecoins
+### XUSD can be minted with or redeemed for stable coins
+* Redemption carries nominal fee (0.5%) paid to 
+* Stable coins in vault are deposited into strategies
+* Adjustable buffer reduces futile cycles
 
 ```mermaid
     %%{init: { 'theme': dark' } }%%
@@ -23,7 +26,11 @@ sequenceDiagram
     deactivate XUSD Contract
 ```
 
-### Rebase XUSD balances with gains
+### Strategies generates yield and XUSD increases supply
+* Deposit-type investments are tracked
+* Rewards tokens are periodically sold for stablecoins and reinvested
+* XUSD in wallets (EOAs) are rebased to account for change in vault value
+* Adjustable Portion of yield paid to treasury, initially 0%
 
 ```mermaid
     %%{init: { 'theme': dark' } }%%
@@ -46,7 +53,9 @@ sequenceDiagram
     deactivate XUSD Contract
 ```
 
-### Redeem XUSD for Stablecoins
+### XUSD is always fully redeemable for stablecoins
+* Redemption always possible for full value of XUSD
+* Backing assets are liquidated from yield strategies if necessary
 
 ```mermaid
     %%{init: { 'theme': dark' } }%%
@@ -66,7 +75,11 @@ sequenceDiagram
     XUSD Contract->>-Wallet: Transfer Stablecoins
 ```
 
-### Reward FACT from protocol fee & liquidity pools
+### Reward governance token (FACT) from protocol fees & liquidity pools
+* FACT is [not yet launched](/roadmap#table-stakes)
+* Vault purchases governance token on open market using collected protocol fees
+* Vault distributes governance token to FACT stakers and XUSD liquidity providers
+* Governance token confers voting rights
 
 ```mermaid
     %%{init: { 'theme': dark' } }%%
@@ -87,29 +100,4 @@ sequenceDiagram
     Vault->>-Wallet: Distribute FACT
 ```
 
-##### XUSD can be minted with or redeemed for stable coins
-* Redemption carries nominal fee (0.5%) paid to treasury
-##### Stable coins in vault are deposited into strategies
-* Adjustable buffer reduces futile cycles
-##### Strategies generate yield increasing treasury value
-* Deposit-type investments are tracked
-* Rewards tokens are periodically sold for stablecoins and reinvested
-##### XUSD in wallets (EOAs) are rebased to account for change in vault value
-* Adjustable Portion of yield paid to treasury, initially 0%
-##### Treasury purchases governance token on open market using treasury funds
-##### Treasury distributes governance token to stakers
-##### Governance token confers voting rights
-
-### Sequence Diagram
-
-
-    D --> |Redeem|A
-    D --> |Transfer funds | E
-    E[Vault] -->|Allocate funds| F(Yield strategies)
-    F -->|Harvest gains| E
-    E --> |Distribute gains| D
-    D --> |rebase supply|D
-    E --> |Collect protocol fee| G(Treasury)
-    G --> |Buy FACT with collected fee| G
-    G --> |Distribute FACT| H(FACT Staking module)
 
