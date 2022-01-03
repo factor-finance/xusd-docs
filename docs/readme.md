@@ -8,7 +8,7 @@ Factor XUSD is the first yieldcoin - an interest bearing stablecoin - to be laun
 
 [!ref](how.md)
 
-### Status
+## Status
 
 XUSD is under active development and is currently [deployed](https://testnet.snowtrace.io/token/0x66b0ced1ae158871cd9accb2f55e355c1a636025) to the Avalanche Fuji Testnet. See the Roadmap for more details.
 
