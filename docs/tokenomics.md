@@ -6,7 +6,7 @@ icon: sync
 
 
 ### XUSD can be minted with or redeemed for stable coins
-* Redemption carries nominal fee (0.5%) paid to 
+* Redemption carries nominal fee (0.5%) paid to vault
 * Stable coins in vault are deposited into strategies
 * Adjustable buffer reduces futile cycles
 
