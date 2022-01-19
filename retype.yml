@@ -7,12 +7,9 @@ branding:
   logo: img/logo_white_64.png
   logoAlign: left
 links:
-#- text: Buy XUSD
-#  link: https://app.xusd.fi
-#  icon: rocket
-- text: XUSD on Snowtrace
-  link: https://testnet.snowtrace.io/token/0x66b0ced1ae158871cd9accb2f55e355c1a636025
-  icon: note
+  - text: Try on Fuji Testnet
+    link: https://app.xusd.fi/swap
+    icon: rocket
 footer:
   copyright: "&copy; Copyright {{ year }} Factor Finance"
   links:
@@ -22,4 +19,7 @@ footer:
   - text: Github
     link: https://github.com/factor-finance
     icon: mark-github
+  - text: XUSD on Snowtrace
+    link: https://testnet.snowtrace.io/token/0xcfB8563ECE6153c585db58858407f70aB1D5d914
+    icon: note
 favicon: img/favicon.png
