@@ -6,11 +6,11 @@ icon: versions
 
 ## 2022 Q1-Q2
 ### Testnet launch
-* January 2022
+* :white_check_mark: January 2022
 ### Mainnet launch
-* Mainnet contracts
-* XUSD-mint/redeem/swap Dapp
-* Analytics dashboard for protocol and account-level
+* :white_check_mark: Mainnet contracts
+* :white_check_mark: XUSD-mint/redeem/swap Dapp
+* :white_check_mark: Analytics dashboard for protocol and account-level
 ### DAO core
 * Launch governance token
 * Lockdrop rewards
