@@ -1,5 +1,6 @@
 ---
 icon: people
+order: 95
 ---
 # Community
 
