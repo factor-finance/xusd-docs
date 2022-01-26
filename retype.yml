@@ -7,7 +7,7 @@ branding:
   logo: img/logo_white_64.png
   logoAlign: left
 links:
-  - text: Try on Fuji Testnet
+  - text: Buy XUSD
     link: https://app.xusd.fi/swap
     icon: rocket
 footer:
