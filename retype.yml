@@ -20,6 +20,6 @@ footer:
     link: https://github.com/factor-finance
     icon: mark-github
   - text: XUSD on Snowtrace
-    link: https://testnet.snowtrace.io/token/0xcfB8563ECE6153c585db58858407f70aB1D5d914
+    link: https://snowtrace.io/token/0xBdf3c7412Eb426197DA14Ad084567c006f365d76
     icon: note
 favicon: img/favicon.png
