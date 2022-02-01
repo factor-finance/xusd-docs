@@ -8,9 +8,23 @@ order: 90
 
 DeFi projects have stopped making sense: Ponzi schemes, byzantine tokenomics, and airdrop frenzies. Factor will build the boring projects that glue the world together: liquid stable yieldcoin, asset indexes, and yield indexes. Factor will design ecosystems that encourage long term holders, build real value, and establish trust.
 
-Factor's start is XUSD, a stable yieldcoin that is [live on Avalanche](https://app.xusd.fi) (based on Ethereum [OUSD](https://ousd.com/) under MIT/AGPL license). Avalanche (and other challenger chains) offer better risk-adjusted returns now and for the foreseeable future. Further, ethereum gas is not affordable for most users and burdens protocols. XUSD will yield comes from top tier strategies targeting ~10-20% expectancy. XUSD will go cross-chain. The protocol and new strategies are under active development and audits, so stay in touch in our [Discord](https://discord.gg/ETE7ksP8Fd) to hear about release.
+Factor's start is XUSD, a stable yieldcoin that is [live on Avalanche](https://app.xusd.fi) (based on Ethereum [OUSD](https://ousd.com/) under MIT/AGPL license). Avalanche and other challenger chains will offer best in class APYs for the foreseeable future. A decentralization first design principal guides technology development. XUSD yield will be best in class: targeting 10-20% APR. XUSD will spread cross-chain quickly. Factor will build institutional support.
 
-Factor's governance token, FACT, will launch in early 2022.
+#### Goals
+
+:icon-broadcast: Decentralized by design
+
+:icon-repo-forked: Cross-chain
+
+:icon-file-badge: Best in class APY
+
+:icon-organization: Institutional support
+
+#### Status
+
+The protocol and new strategies are under active development and audits, so stay in touch in our [Discord](https://discord.gg/ETE7ksP8Fd) to hear about release.
+
+Factor's governance token, FACT, will (fair) launch in early 2022.
 
 ## Future product plans
 
@@ -32,7 +46,7 @@ Experienced team.
 
 :icon-flame: L1 developer
 
-:icon-sync: CEO & founder with multiple exit
+:icon-sync: CEO & founder with multiple exits
 
 -![](img/ballers.jpg)
 ---
