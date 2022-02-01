@@ -4,6 +4,7 @@ icon: versions
 ---
 # Roadmap
 
+# XUSD
 ## 2022 Q1-Q2
 ### Testnet launch
 * :white_check_mark: January 2022
@@ -32,12 +33,14 @@ icon: versions
 * Community rewards for content, moderation documentation translation, design/end
 * Get Avalanche Rush incentives
 ### Addressable market growth
+* Cross-chain launches and swaps
 * CEX partnerships
 * Custodian partnerships
-* Institutional sales
+* Institutional holders
 
 ## 2023 Q1
 ### Decentralization & governance
 * Governance handovers for: tokenomics, strategy selection, strategy proposal
 * Community development fund
-* Reward mechanisms for strategy designers
+* Reward  mechanisms for strategy designers
+
