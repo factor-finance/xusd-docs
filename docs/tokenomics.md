@@ -76,7 +76,7 @@ sequenceDiagram
 ```
 
 ### Reward governance token (FACT) from protocol fees & liquidity pools
-* FACT is [not yet launched](/roadmap#table-stakes)
+* FACT is [not yet launched](/roadmap#dao-core)
 * Vault purchases governance token on open market using collected protocol fees
 * Vault distributes governance token to FACT stakers and XUSD liquidity providers
 * Governance token confers voting rights
