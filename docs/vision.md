@@ -49,7 +49,8 @@ Decades of combined experience in startups, insitutional finance, and blockchain
 
 :icon-sync: CEOs & founders with multiple exits
 
--![](img/ballers.jpg)
+:icon-star: Spirit animal: [95-96 Chicago Bulls](img/ballers.jpg)
+
 ---
 ![0xAnnapurna](/img/annapurna.jpg) ![0xEverest](/img/everest.jpg) ![0xKirkjufell](/img/kirkjufell.jpg)
 ---
