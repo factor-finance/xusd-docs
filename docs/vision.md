@@ -27,7 +27,7 @@ Factor's start is XUSD: a stable yieldcoin now [live on Avalanche](https://app.x
 
 The protocol and new strategies are under active development and audits, so stay in touch in our [Discord](https://discord.gg/ETE7ksP8Fd) to hear about release.
 
-Factor's governance token, FACT, will fair launch in early 2022.
+Factor's governance token, FACT, will launch in early 2022. See our [Roadmap](roadmap.md) to learn more.
 
 ## Future products
 
