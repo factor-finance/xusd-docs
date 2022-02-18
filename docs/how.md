@@ -21,6 +21,11 @@ Redemptions using the XUSD vault incur a 0.5% exit fee and the user doesn't get 
 
 #### Supported stablecoins
 Currently, XUSD supports these stablecoins:
++++ ![](https://app.xusd.fi/images/currency/usdc-icon-small.svg)  USDC
+**[USDC](https://snowtrace.io/token/0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e)**
+
+`Avalanche C-chain address: 0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e`
+
 +++ ![](https://app.xusd.fi/images/currency/usdc-icon-small.svg)  USDC.e
 **[Avalanche-bridged USDC](https://snowtrace.io/token/0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664)**
 

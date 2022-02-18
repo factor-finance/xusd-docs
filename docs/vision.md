@@ -7,7 +7,7 @@ order: 80
 
 We believe in a future where all finance is on chain. We’re implementing the backbone instruments that will grow that ecosystem and create stability and safety for responsible crypto investors.
 
-Today's DeFi projects have become boxed in: Ponzi schemes, byzantine tokenomics, and airdrop frenzies. Instead, Factor is designing simple-to-use decentralized ecosystems that encourage long term holders, build real value, and establish trust.
+Today's DeFi projects have become boxed in: Ponzi schemes, byzantine tokenomics, and airdrop frenzies. Instead, Factor is designing simple-to-use decentralized ecosystems that encourage long term holders, build real value, and establish trust. Our is to capture as much value as possible while generating maximal yield for distribution to users. We won't put money in things that we don't understand and neither should you.
 
 We're bringing to market the core products necessary to glue a financial world together: a liquid stable yieldcoin, asset indexes, and yield indexes.
 
@@ -32,10 +32,11 @@ Factor's governance token, FACT, will launch in early 2022. See our [Roadmap](ro
 ## Future products
 
 ### Crypto asset indexes
-No one has succeeded in building good, decentralized, on-chain indexes. Bringing usable and safe asset diversification to the ecosystem is overdue.
+No one has succeeded in building good, decentralized, cross-chain, on-chain indexes. Bringing usable and safe asset diversification to the ecosystem is overdue.
 
 ### AMM yield indexes
 A protocol for building diverified exposure to AMM pool yields will simplify investment and speed liquidity distribution.
+
 
 ## Team
 
