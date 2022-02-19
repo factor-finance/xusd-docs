@@ -10,6 +10,9 @@ links:
   - text: Buy XUSD
     link: https://app.xusd.fi/swap
     icon: rocket
+  - text: APY History
+    link: https://app.xusd.fi/apy
+    icon: graph
 footer:
   copyright: "&copy; Copyright {{ year }} Factor Finance"
   links:

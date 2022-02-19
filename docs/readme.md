@@ -11,6 +11,6 @@ Factor XUSD is the first stable yieldcoin - an interest bearing stablecoin - liv
 
 ## Status
 
-XUSD is under active development and is currently [deployed](https://snowtrace.io/token/0xBdf3c7412Eb426197DA14Ad084567c006f365d76) to Avalanche mainnet. See the "Roadmap" for more details.
+XUSD is under active development and is currently [deployed](https://snowtrace.io/token/0xBdf3c7412Eb426197DA14Ad084567c006f365d76) to Avalanche mainnet and [realizing yields](https://app.xusd.fi/apy). See the "Roadmap" for more details.
 
 [!ref](roadmap.md)
