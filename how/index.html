@@ -25,11 +25,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/img/favicon.png" rel="icon" />
-    <link href="/resources/css/retype.css?v=1.11.2.698561496087" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.699737003034" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698561496087" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.699737003034" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698561496087" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.699737003034" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -299,7 +299,7 @@
 <ul>
 <li>The vault invests in ultra-low volatility, market neutral strategies</li>
 <li>Extensible and configurable strategy set e.g. lending on <a href="https://app.aave.com/#/markets">Aave</a>, stablecoin liquidity providing (curve.fi, Pangolin), and other DeFi strategies.</li>
-<li>Rewards are claimed, collected, swapped, and reinvested automatically at least <em>once per day</em></li>
+<li>Rewards are claimed, collected, swapped, and reinvested automatically at least <em>once per day</em> via our <a href="https://snowtrace.io/address/0xFF1AE57723A4d6d5301e4C7145eF5E9e51901fdc">automated keeper</a>.</li>
 </ul>
 <doc-anchor-target id="yield-generation-strategies">
     <h4>
@@ -307,6 +307,12 @@
         <span>Yield generation strategies</span>
     </h4>
 </doc-anchor-target>
+<ul>
+<li>The <a href="https://app.xusd.fi/status">active yield strategies and allocations are displayed here.</a></li>
+<li><strong>Aave</strong> lending stablecoins to Aave</li>
+<li><strong>Curve USDC/USDC.e</strong> Providing liquidity to the Curve.fi automated market making strategy <a href="https://avax.curve.fi/factory/30">for USDC/USDC.e (Avalanche-native USDC and Bridged USDC)</a></li>
+<li>More coming soon</li>
+</ul>
 <doc-anchor-target id="elastic-supply">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#elastic-supply">#</doc-anchor-trigger>
