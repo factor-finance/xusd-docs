@@ -43,10 +43,13 @@ Currently, XUSD supports these stablecoins:
 #### Automated stablecoin yield farming
 * The vault invests in ultra-low volatility, market neutral strategies
 * Extensible and configurable strategy set e.g. lending on [Aave](https://app.aave.com/#/markets), stablecoin liquidity providing (curve.fi, Pangolin), and other DeFi strategies.
-* Rewards are claimed, collected, swapped, and reinvested automatically at least _once per day_
+* Rewards are claimed, collected, swapped, and reinvested automatically at least _once per day_ via our [automated keeper](https://snowtrace.io/address/0xFF1AE57723A4d6d5301e4C7145eF5E9e51901fdc).
 
 #### Yield generation strategies
-
+* The [active yield strategies and allocations are displayed here.](https://app.xusd.fi/status)
+* __Aave__ lending stablecoins to Aave
+* __Curve USDC/USDC.e__ Providing liquidity to the Curve.fi automated market making strategy [for USDC/USDC.e (Avalanche-native USDC and Bridged USDC)](https://avax.curve.fi/factory/30)
+* More coming soon
 
 #### Elastic supply
 * The amount of XUSD in all wallets increases when gains are realized
