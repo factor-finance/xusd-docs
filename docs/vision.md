@@ -40,7 +40,7 @@ A protocol for building diverified exposure to AMM pool yields will simplify inv
 
 ## Team
 
-Decades of combined experience in startups, insitutional finance, and blockchain technology have led to a team of seasoned founders, engineers, and data scientists.
+Decades of combined experience in startups, institutional finance, and blockchain technology have led to a team of seasoned founders, engineers, and data scientists.
 
 :icon-rocket: Principal-level FAANG engineer
 

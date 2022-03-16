@@ -23,12 +23,12 @@ icon: versions
 * Audits
 * Bug bounty
 ### Strategy development
-* 2-4 additional strategies targeting 20% APY
+* 2-4 additional strategies targeting 10% APY
 
 ## 2022 Q3
 ### Community growth and support
 * Liquidity incentives, e.g. rewarded curve XUSD-3pool, Pangolin pools
-* XUSD out of EOAs increases yield for EOA holders
+* :white_check_mark: XUSD out of EOAs increases yield for EOA holders
 * Insurance offerings (Insurace, Nexus mutual)
 * Community rewards for content, moderation documentation translation, design/end
 * Get Avalanche Rush incentives
